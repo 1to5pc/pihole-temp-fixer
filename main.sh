@@ -1,10 +1,8 @@
-#isroot="$(id -u)"
-isroot="0"
+#!/bin/bash
+isroot="$(id -u)"
 zero="0"
 if [ $isroot == $zero ]; then
-    echo lolllL
+    echo Nice im root
 else
-    echo haha
-    echo $zero
-    echo $isroot
+    echo Make me root
 fi
