@@ -4,10 +4,13 @@ zero="0"
 if [ $isroot == $zero ]; then
     (cd /var/www/html/admin/scripts/pi-hole/php && pwd
     headerfile="header_authenticated.php"
+    echo checking for header_authenticated.php
     if [ -f "$headerfile" ]; then
-        echo "File is found"
+        echo "header_authenticated.php found"
     else
-        echo "File is not found"
+        echo "header_authenticated not found"
+        echo "To fix update Pi-hole with 'pihole -up'"
+        kill -INT $$
 fi
     )
 
