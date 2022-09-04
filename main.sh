@@ -7,11 +7,9 @@ if [ $isroot == $zero ]; then
     echo checking for header_authenticated.php
     if [ -f "$headerfile" ]; then
         echo "header_authenticated.php found"
-        kill -INT $$
     else
         echo "header_authenticated not found"
         echo "To fix update Pi-hole with 'pihole -up'"
-        kill -INT $$
 fi
     )
 
