@@ -9,7 +9,7 @@ if [ $isroot == $zero ]; then
         echo "header_authenticated.php found"
     else
         echo "header_authenticated not found"
-        echo "To fix update Pi-hole with 'pihole -up'"
+        echo "Update Pi-hole with 'pihole -up'"
 fi
     )
 
